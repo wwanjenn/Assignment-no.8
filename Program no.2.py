@@ -15,7 +15,7 @@ print('Guess the Number!')
 randomNumber = random.randint(0,100)
 
 # 2 Input from user
-userGuess = input('Guess: ')
+userGuess = int(input('Guess: '))
 
 # 3 Conditional Loop
 while userGuess != randomNumber:
@@ -25,7 +25,7 @@ while userGuess != randomNumber:
         print('Guess is greater than the random Number!')
     elif userGuess < randomNumber:
         print('Guess is lesser than the Random Number!')
-    userGuess = input('Guess: ')
+    userGuess = int(input('Guess: '))
 
 # 5 Print Congratulations 
 print('Congratulations! You Win!')
