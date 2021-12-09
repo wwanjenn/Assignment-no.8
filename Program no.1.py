@@ -28,7 +28,7 @@ while tryAgain[0] == 'y' or tryAgain[0] == 'Y':
 # 3 Check if 3 inputs match generated numbers
     if firstNumber == firstLotto and secondNumber == secondLotto and thirdNumber == thirdLotto:
         messageDisplay = 'You Win!'
-    elif firstNumber != firstLotto and secondNumber != secondLotto and thirdNumber !=thirdLotto:
+    else:
         messageDisplay = 'You lose!'
 # 4 Display
     print(f'{firstNumber}, {secondNumber}, {thirdNumber}')
