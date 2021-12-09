@@ -47,7 +47,7 @@ while tryAgain[0] == 'y' or tryAgain[0] == 'Y':
     print(f'{firstNumber}, {secondNumber}, {thirdNumber}')
     print(f'{firstLotto}, {secondLotto}, {thirdLotto}')
     print(f'{messageDisplay}')
+    
 # 5 try again
-
     tryAgain = input('Try again?(y/n): ')
 
