@@ -24,8 +24,13 @@ secondLotto = random.randint(0,9)
 thirdLotto = random.randint(0,9)
 
 # 3 Check if 3 inputs match generated numbers
+if firstNumber == firstLotto and secondNumber == secondLotto and thirdNumber == thirdLotto:
+    messageDisplay = 'You Win!'
+elif firstNumber != firstLotto and secondNumber != secondLotto and thirdNumber !=thirdLotto:
+    messageDisplay = 'You lose!'
 # 4 Display
 print(f'{firstNumber}, {secondNumber}, {thirdNumber}')
 print(f'{firstLotto}, {secondLotto}, {thirdLotto}')
+print(f'{messageDisplay}')
 # 5 try again
 
