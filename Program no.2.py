@@ -19,6 +19,10 @@ userGuess = input('Guess: ')
 
 # 3 Conditional Loop
 while userGuess != randomNumber:
-
+    if userGuess > randomNumber:
+        print('Guess is greater than the random Number!')
+    elif userGuess < randomNumber:
+        print('Guess is lesser than the Random Number!')
+        
 # 4 Display if Guess is greater or lesser
 # 5 Print Congratutalions 
