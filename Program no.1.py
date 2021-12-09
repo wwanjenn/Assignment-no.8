@@ -8,9 +8,16 @@
 # if “n” the program will exit.
 
 # Interactive Loop
+import random
 
 # STEPS
 # 1 Ask for 3 Numbers
+print("Lottery!")
+
+firstNumber = int(input("1st Number: "))
+secondNumber = int(input("2nd Number: "))
+thirdNumber =  int(input("3rd Number: "))
+
 # 2 Generate 3 random numbers
 # 3 Check if 3 inputs match generated numbers
 # 4 Display
