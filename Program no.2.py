@@ -17,7 +17,8 @@ randomNumber = random.randint(0,100)
 # 2 Input from user
 userGuess = input('Guess: ')
 
-# 2 Input from user
 # 3 Conditional Loop
+while userGuess != randomNumber:
+
 # 4 Display if Guess is greater or lesser
 # 5 Print Congratutalions 
