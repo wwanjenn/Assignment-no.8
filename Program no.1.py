@@ -7,14 +7,12 @@
 # If the user enter “y” the user will play again
 # if “n” the program will exit.
 
-# C
+# Interactive Loop
 
 # STEPS
-# 1
-# 2
-# 3
-# 4
-# 5
-# 6
-# 7
-# 8
+# 1 Ask for 3 Numbers
+# 2 Generate 3 random numbers
+# 3 Check if 3 inputs match generated numbers
+# 4 Display
+# 5 try again
+
