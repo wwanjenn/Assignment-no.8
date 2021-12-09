@@ -24,7 +24,8 @@ secondLotto = random.randint(0,9)
 thirdLotto = random.randint(0,9)
 
 # 3 Check if 3 inputs match generated numbers
-
 # 4 Display
+print(f'{firstNumber}, {secondNumber}, {thirdNumber}')
+print(f'{firstLotto}, {secondLotto}, {thirdLotto}')
 # 5 try again
 
