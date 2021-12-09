@@ -23,6 +23,7 @@ while userGuess != randomNumber:
         print('Guess is greater than the random Number!')
     elif userGuess < randomNumber:
         print('Guess is lesser than the Random Number!')
-        
+    userGuess = input('Guess: ')
+
 # 4 Display if Guess is greater or lesser
 # 5 Print Congratutalions 
