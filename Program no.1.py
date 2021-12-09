@@ -10,39 +10,42 @@
 # Interactive Loop
 import random
 tryAgain = 'y'
+
 # STEPS
 while tryAgain[0] == 'y' or tryAgain[0] == 'Y':
 
 # 1 Ask for 3 Numbers
     print("Lottery!")
-    while True:
-        try:
-            firstNumber = int(input("1st Number: "))
-        except firstNumber < 0 or firstNumber > 9:
-            print('Choose a Number from 0-9')
-        try:
-            secondNumber = int(input("2nd Number: "))
-        except secondNumber < 0 or secondNumber > 9:
-            print('Choose a Number from 0-9')
-        try:
-            thirdNumber =  int(input("3rd Number: "))
-        except thirdNumber < 0 or thirdNumber > 9:
-            print('Choose a Number from 0-9')
+    firstNumber = int(input("1st Number: "))
+    while firstNumber > -1 and firstNumber < 10:
+        firstNumber = int(input("1st Number: "))
+        print('Choose a number from 0-9')
+
+    secondNumber = int(input("2nd Number: "))
+    while secondNumber > -1 and secondNumber < 10:
+        secondNumber = int(input("2nd Number: "))
+        print('Choose a number from 0-9')
+
+    thirdNumber =  int(input("3rd Number: "))
+    while thirdNumber > -1 and secondNumber < 10:
+        thirdNumber =  int(input("3rd Number: "))
+        print('Choose a number from 0-9')
+    
 # 2 Generate 3 random numbers
-        firstLotto = random.randint(0,9)
-        secondLotto = random.randint(0,9)
-        thirdLotto = random.randint(0,9)
+    firstLotto = random.randint(0,9)
+    secondLotto = random.randint(0,9)
+    thirdLotto = random.randint(0,9)
 
 # 3 Check if 3 inputs match generated numbers
-        if firstNumber == firstLotto and secondNumber == secondLotto and thirdNumber == thirdLotto:
-            messageDisplay = 'You Win!'
-        else:
-            messageDisplay = 'You lose!'
+    if firstNumber == firstLotto and secondNumber == secondLotto and thirdNumber == thirdLotto:
+        messageDisplay = 'You Win!'
+    else:
+        messageDisplay = 'You lose!'
 # 4 Display
-        print(f'{firstNumber}, {secondNumber}, {thirdNumber}')
-        print(f'{firstLotto}, {secondLotto}, {thirdLotto}')
-        print(f'{messageDisplay}')
+    print(f'{firstNumber}, {secondNumber}, {thirdNumber}')
+    print(f'{firstLotto}, {secondLotto}, {thirdLotto}')
+    print(f'{messageDisplay}')
 # 5 try again
 
-        tryAgain = input('Try again?(y/n): ')
+    tryAgain = input('Try again?(y/n): ')
 
