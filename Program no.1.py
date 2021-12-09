@@ -17,19 +17,21 @@ while tryAgain[0] == 'y' or tryAgain[0] == 'Y':
 # 1 Ask for 3 Numbers
     print("Lottery!")
     firstNumber = int(input("1st Number: "))
-    while firstNumber > -1 and firstNumber < 10:
+    while firstNumber < 0 or firstNumber > 9:
+        print('Choose a number from 0-9')
         firstNumber = int(input("1st Number: "))
-        print('Choose a number from 0-9')
-
+        
     secondNumber = int(input("2nd Number: "))
-    while secondNumber > -1 and secondNumber < 10:
-        secondNumber = int(input("2nd Number: "))
+    while secondNumber < 0 or secondNumber > 9:
         print('Choose a number from 0-9')
+        secondNumber = int(input("2nd Number: "))
+        
 
     thirdNumber =  int(input("3rd Number: "))
-    while thirdNumber > -1 and secondNumber < 10:
-        thirdNumber =  int(input("3rd Number: "))
+    while thirdNumber < 0  or secondNumber > 9:
         print('Choose a number from 0-9')
+        thirdNumber =  int(input("3rd Number: "))
+        
     
 # 2 Generate 3 random numbers
     firstLotto = random.randint(0,9)
