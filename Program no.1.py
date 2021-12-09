@@ -9,7 +9,7 @@
 
 # Interactive Loop
 import random
-
+tryAgain = 'y'
 # STEPS
 while tryAgain[0] == 'y' or tryAgain[0] == 'Y':
 
