@@ -8,6 +8,10 @@
 # CONDITIONAL LOOP
 
 # 1 Generate Random Number 0-100
+import random
+
+randomNumber = random.randint(0,100)
+# 2 Input from user
 # 3 Conditional Loop
 # 4 Display if Guess is greater or lesser
 # 5 Print Congratutalions 
