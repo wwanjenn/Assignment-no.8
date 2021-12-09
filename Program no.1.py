@@ -19,7 +19,12 @@ secondNumber = int(input("2nd Number: "))
 thirdNumber =  int(input("3rd Number: "))
 
 # 2 Generate 3 random numbers
+firstLotto = random.randint(0,9)
+secondLotto = random.randint(0,9)
+thirdLotto = random.randint(0,9)
+
 # 3 Check if 3 inputs match generated numbers
+
 # 4 Display
 # 5 try again
 
