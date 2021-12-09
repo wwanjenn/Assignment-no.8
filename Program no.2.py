@@ -10,7 +10,11 @@
 # 1 Generate Random Number 0-100
 import random
 
+print('Guess the Number!')
+
 randomNumber = random.randint(0,100)
+
+# 2 Input from user
 # 2 Input from user
 # 3 Conditional Loop
 # 4 Display if Guess is greater or lesser
