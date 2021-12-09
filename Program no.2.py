@@ -15,6 +15,8 @@ print('Guess the Number!')
 randomNumber = random.randint(0,100)
 
 # 2 Input from user
+userGuess = input('Guess: ')
+
 # 2 Input from user
 # 3 Conditional Loop
 # 4 Display if Guess is greater or lesser
