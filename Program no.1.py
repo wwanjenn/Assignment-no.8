@@ -39,21 +39,21 @@ while tryAgain[0] == 'y' or tryAgain[0] == 'Y':
     thirdLotto = random.randint(0,9)
 
 # 3 Check if 3 inputs match generated numbers
-    if firstNumber == firstLotto or firstNumber == secondLotto or firstNumber == thirdLotto:
+
+    if firstLotto == firstNumber or firstLotto == secondNumber or firstLotto == thirdNumber:
         firstResult = 'correct'
     else:
         firstResult = 'wrong'
     
-    if secondNumber == firstLotto or secondNumber == secondLotto or secondNumber == thirdLotto:
+    if secondLotto == firstNumber or secondLotto == secondNumber or secondLotto == thirdNumber:
         secondResult = 'correct'
     else:
         secondResult = 'wrong'
     
-    if thirdNumber == firstLotto or thirdNumber == secondLotto or thirdNumber == thirdLotto:
+    if thirdLotto == firstNumber or thirdLotto == secondNumber or thirdLotto == thirdNumber:
         secondResult = 'correct'
     else:
         secondResult = 'wrong'
-
 
 # 4 Check for Result and Choose messageDisplay
 # 5 Display
