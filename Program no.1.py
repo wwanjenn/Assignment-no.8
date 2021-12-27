@@ -39,15 +39,18 @@ while tryAgain[0] == 'y' or tryAgain[0] == 'Y':
     thirdLotto = random.randint(0,9)
 
 # 3 Check if 3 inputs match generated numbers
-    if firstNumber == firstLotto and secondNumber == secondLotto and thirdNumber == thirdLotto:
-        messageDisplay = 'You Win!'
+    if firstNumber == firstLotto or firstNumber == secondLotto or firstNumber == thirdLotto:
+        firstResult = 'correct'
     else:
-        messageDisplay = 'You lose!'
-# 4 Display
+        firstNumber = 'wrong'
+
+
+# 4 Check for Result and Choose messageDisplay
+# 5 Display
     print(f'{firstNumber}, {secondNumber}, {thirdNumber}')
     print(f'{firstLotto}, {secondLotto}, {thirdLotto}')
     print(f'{messageDisplay}')
     
-# 5 try again
+# 6 try again
     tryAgain = input('Try again?(y/n): ')
 
