@@ -42,7 +42,17 @@ while tryAgain[0] == 'y' or tryAgain[0] == 'Y':
     if firstNumber == firstLotto or firstNumber == secondLotto or firstNumber == thirdLotto:
         firstResult = 'correct'
     else:
-        firstNumber = 'wrong'
+        firstResult = 'wrong'
+    
+    if secondNumber == firstLotto or secondNumber == secondLotto or secondNumber == thirdLotto:
+        secondResult = 'correct'
+    else:
+        secondResult = 'wrong'
+    
+    if thirdNumber == firstLotto or thirdNumber == secondLotto or thirdNumber == thirdLotto:
+        secondResult = 'correct'
+    else:
+        secondResult = 'wrong'
 
 
 # 4 Check for Result and Choose messageDisplay
