@@ -51,11 +51,17 @@ while tryAgain[0] == 'y' or tryAgain[0] == 'Y':
         secondResult = 'wrong'
     
     if thirdLotto == firstNumber or thirdLotto == secondNumber or thirdLotto == thirdNumber:
-        secondResult = 'correct'
+        thirdResult = 'correct'
     else:
-        secondResult = 'wrong'
+        thirdResult = 'wrong'
 
 # 4 Check for Result and Choose messageDisplay
+
+    if firstResult == 'correct' and secondResult == 'correct' and thirdResult == 'correct':
+        messageDisplay = 'You Win!'
+    elif firstResult == 'wrong' or secondResult == 'wrong' or thirdResult == 'wrong'
+        messageDisplay = 'You Lose.'
+
 # 5 Display
     print(f'{firstNumber}, {secondNumber}, {thirdNumber}')
     print(f'{firstLotto}, {secondLotto}, {thirdLotto}')
