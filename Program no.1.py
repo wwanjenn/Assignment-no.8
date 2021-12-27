@@ -59,7 +59,7 @@ while tryAgain[0] == 'y' or tryAgain[0] == 'Y':
 
     if firstResult == 'correct' and secondResult == 'correct' and thirdResult == 'correct':
         messageDisplay = 'You Win!'
-    elif firstResult == 'wrong' or secondResult == 'wrong' or thirdResult == 'wrong'
+    elif firstResult == 'wrong' or secondResult == 'wrong' or thirdResult == 'wrong':
         messageDisplay = 'You Lose.'
 
 # 5 Display
